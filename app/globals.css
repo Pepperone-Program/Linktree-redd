@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Base premium + dark mode via class */
+:root {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100dvh;
+  background: transparent;
+  color: #0f0f0f;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Melhorias gerais */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Scrollbar premium */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, rgba(220, 38, 38, 0.75), rgba(220, 38, 38, 0.55));
+  border-radius: 999px;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, rgba(220, 38, 38, 0.78), rgba(220, 38, 38, 0.55));
+}
